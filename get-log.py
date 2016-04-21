@@ -39,6 +39,7 @@ def get_log():
                             return
                     except KeyError:
                         pass
+        print 'No log could be found for token %s' % params.get('log-token')
 
 def start():
     load_config()
